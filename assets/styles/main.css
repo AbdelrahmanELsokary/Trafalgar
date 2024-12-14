@@ -11,6 +11,7 @@ body {
 }
 :root {
   --main-color: #458FF6;
+  --main-color2:rgba(69, 143, 246, 0.353);
   --title-color: #000000;
   --shadow: #00000010;
   --text-color: #7D7987;
@@ -32,16 +33,16 @@ a {
 ul {
   list-style: none;
 }
-img{
+img {
   max-width: 100%;
 }
-p{
+p {
   line-height: 1.4;
   font-size: var(--text-size);
   color: var(--text-color);
   padding-top: 15px;
 }
-h2{
+h2 {
   font-size: var(--h2-size);
 }
 @media (min-width: 768px) {
@@ -75,7 +76,7 @@ header .container .logo span {
   font-size: 30px;
   border-radius: 50%;
 }
-header .container .logo a{
+header .container .logo a {
   color: var(--text-color2);
   font-size: 30px;
   font-weight: 700;
@@ -115,28 +116,30 @@ header .container nav .home a {
   }
 }
 @media (min-width:992px) {
-  header .container nav label , input{
+  header .container nav label,
+  input {
     display: none;
   }
   header .container nav ul {
     display: flex;
     gap: 35px;
   }
-  header .container nav ul li a{
+  header .container nav ul li a {
     font-size: 20px;
-    color: var(--text-color);}
+    color: var(--text-color);
+  }
 }
-.d-flex{
+.d-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.hero .container .info h1{
-font-size: var(--h1-size);
+.hero .container .info h1 {
+  font-size: var(--h1-size);
 }
-.hero .container .info a{
+.hero .container .info a {
   display: block;
   width: fit-content;
   background-color: var(--main-color);
@@ -145,43 +148,43 @@ font-size: var(--h1-size);
   padding: 15px 20px;
   margin-top: 20px;
 }
-.services .container{
+.services .container {
   padding-top: 100px;
 }
 .services .container .titel {
   text-align: center;
 }
-.services .container .titel h2{
+.services .container .titel h2 {
   position: relative;
   padding-bottom: 30px;
 }
-.services .container .titel h2::before{
+.services .container .titel h2::before {
   content: "";
   position: absolute;
   width: 80px;
   height: 3px;
   bottom: 10px;
   right: 47%;
-  background-color:var(--title-color);
+  background-color: var(--title-color);
   border-radius: 10px;
 }
 .services {
   position: relative;
 }
-.services .container .our_services{
+.services .container .our_services {
   margin-top: 50px;
 }
-.services::before{
+.services::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 240px;
-  background-image: url(../images/blob-1.webp) ;
+  background-image: url(../images/blob-1.webp);
   background-repeat: no-repeat;
   z-index: -1;
 }
-.services .container .our_services .service{
+.services .container .our_services .service {
   background-color: var(--alt-text-color);
   width: 320px;
   height: 300px;
@@ -190,62 +193,138 @@ font-size: var(--h1-size);
   padding: 30px 20px;
   margin: 20px;
 }
-.services .container .our_services .service h3{
+.services .container .our_services .service h3 {
   font-size: var(--h3-size);
   padding: 15px 0 0 0;
 }
-.services .container a{
+.services .container a {
   display: flex;
   width: fit-content;
   justify-content: center;
   color: var(--main-color);
   font-weight: 600;
-  border: 2px solid ;
+  border: 2px solid;
   border-radius: 20px;
   padding: 10px 20px;
   margin: 30px auto;
 }
-.Leading{
+.Leading,
+.what_our_customer_are_saying {
   padding-top: 150px;
 }
-.Leading .container{
+.Leading .container {
   gap: 90px;
 }
-.Leading .container  h2{
+.Leading .container h2 {
   position: relative;
   padding-bottom: 30px;
 }
-.Leading .container h2::before{
+.Leading .container h2::before {
   content: "";
   position: absolute;
   width: 80px;
   height: 3px;
   bottom: 5px;
-  background-color:var(--title-color);
+  background-color: var(--title-color);
   border-radius: 10px;
 }
-.Leading .container p{
+.Leading .container p {
   padding-top: 25px;
 }
-.Leading .container a{
+.Leading .container a {
   display: block;
   width: fit-content;
   color: var(--main-color);
   font-weight: 600;
-  border: 2px solid ;
+  border: 2px solid;
   border-radius: 20px;
   padding: 10px 20px;
   margin-top: 25px;
 }
-.download .container{
+.download .container {
   gap: 20px;
 }
-.download .container a{
+.download .container a {
   display: flex;
   align-items: center;
-
 }
-.download .container a img{
+.download .container a img {
   height: 20px;
   padding-left: 10px;
+}
+.what_our_customer_are_saying .container {
+  position: relative;
+  background-color: var(--main-color);
+  color: var(--alt-text-color);
+  border-radius: 20px;
+  padding: 50px;
+}
+.what_our_customer_are_saying .container h2 {
+  position: relative;
+  text-align: center;
+}
+.what_our_customer_are_saying .container h2::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  bottom: -20px;
+  right: 46%;
+  background-color: var(--alt-text-color);
+  border-radius: 10px;
+}
+.what_our_customer_are_saying .container .customer {
+  gap: 100px;
+  padding-top: 60px;
+}
+.what_our_customer_are_saying .container .customer .client {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.what_our_customer_are_saying .container .customer .client .info_client h3{
+  padding-bottom: 10px;
+}
+.what_our_customer_are_saying .container .customer p{
+  color: var(--alt-text-color);
+}
+.what_our_customer_are_saying .container::before{
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 100px;
+  background-image: url(../images/elemnt.webp);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+}
+.what_our_customer_are_saying .container::after{
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 100px;
+  background-image: url(../images/elemnt.webp);
+  left: -45px;
+  bottom: 30px;
+  z-index: -1;
+}
+.what_our_customer_are_saying .slied{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 50px 0;
+}
+.what_our_customer_are_saying ul {
+  display: flex;
+}
+.what_our_customer_are_saying ul .first{
+background-color: var(--main-color);
+}
+.what_our_customer_are_saying ul li {
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-color2);
+  border-radius: 50%;
+  margin-right: 20px;
 }
