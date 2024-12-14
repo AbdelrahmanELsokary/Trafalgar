@@ -206,7 +206,7 @@ font-size: var(--h1-size);
   margin: 30px auto;
 }
 .Leading{
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .Leading .container{
   gap: 90px;
@@ -225,7 +225,7 @@ font-size: var(--h1-size);
   border-radius: 10px;
 }
 .Leading .container p{
-  padding-top: 35px;
+  padding-top: 25px;
 }
 .Leading .container a{
   display: block;
@@ -236,4 +236,16 @@ font-size: var(--h1-size);
   border-radius: 20px;
   padding: 10px 20px;
   margin-top: 25px;
+}
+.download .container{
+  gap: 20px;
+}
+.download .container a{
+  display: flex;
+  align-items: center;
+
+}
+.download .container a img{
+  height: 20px;
+  padding-left: 10px;
 }
