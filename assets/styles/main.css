@@ -12,6 +12,7 @@ body {
 :root {
   --main-color: #458FF6;
   --title-color: #000000;
+  --shadow: #00000010;
   --text-color: #7D7987;
   --text-color2: #44219b;
   --alt-text-color: #ffffff;
@@ -33,6 +34,12 @@ ul {
 }
 img{
   max-width: 100%;
+}
+p{
+  line-height: 1.4;
+  font-size: var(--text-size);
+  color: var(--text-color);
+  padding-top: 15px;
 }
 @media (min-width: 768px) {
   .container {
@@ -118,18 +125,13 @@ header .container nav .home a {
 }
 .d-flex{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 .hero .container .info h1{
 font-size: var(--h1-size);
-}
-.hero .container .info p{
-  font-size: var(--text-size);
-  line-height: 1.4;
-  color: var(--text-color);
-  padding-top: 15px;
 }
 .hero .container .info a{
   display: block;
@@ -139,4 +141,54 @@ font-size: var(--h1-size);
   border-radius: 40px;
   padding: 15px 20px;
   margin-top: 20px;
+}
+.services .container{
+  padding-top: 100px;
+}
+.services .container .titel {
+  text-align: center;
+}
+.services .container .titel h2{
+  position: relative;
+  font-size: var(--h2-size);
+  padding-bottom: 30px;
+}
+.services .container .titel h2::before{
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  bottom: 10px;
+  right: 47%;
+  background-color:var(--title-color);
+  border-radius: 10px;
+}
+.services {
+  position: relative;
+}
+.services .container .our_services{
+  margin-top: 50px;
+}
+.services::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 240px;
+  background-image: url(../images/blob-1.webp) ;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.services .container .our_services .service{
+  background-color: var(--alt-text-color);
+  width: 320px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px var(--shadow);
+  padding: 30px 20px;
+  margin: 20px;
+}
+.services .container .our_services .service h3{
+  font-size: var(--h3-size);
+  padding: 15px 0 0 0;
 }
