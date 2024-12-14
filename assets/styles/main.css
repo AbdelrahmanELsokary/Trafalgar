@@ -152,6 +152,12 @@ header .container nav .home a {
   padding: 15px 20px;
   margin-top: 20px;
 }
+.hero .container .info a:hover{
+  background-color: var(--alt-text-color);
+  color: var(--main-color);
+  border: 1.5px solid var(--main-color);
+  transition: 0.5s;
+}
 .services .container {
   padding-top: 100px;
 }
@@ -210,6 +216,11 @@ header .container nav .home a {
   padding: 10px 20px;
   margin: 30px auto;
 }
+.services .container a:hover{
+  background-color: var(--main-color);
+  color: var(--alt-text-color);
+  transition: 0.5s;
+}
 .Leading,
 .what_our_customer_are_saying {
   padding-top: 150px;
@@ -243,12 +254,22 @@ header .container nav .home a {
   padding: 10px 20px;
   margin-top: 25px;
 }
+.Leading .container a:hover{
+  background-color: var(--main-color);
+  color: var(--alt-text-color);
+  transition: 0.5s;
+}
 .download .container {
   gap: 20px;
 }
 .download .container a {
   display: flex;
   align-items: center;
+}
+.download .container a:hover{
+  background-color: var(--main-color);
+  color: var(--alt-text-color);
+  transition: 0.5s;
 }
 .download .container a img {
   height: 20px;
@@ -412,6 +433,11 @@ background-color: var(--main-color);
   border-radius: 20px;
   padding: 10px 40px;
   margin: 50px auto;
+}
+.check_out_our_latest_article .btn a:hover{
+  background-color: var(--main-color);
+  color: var(--alt-text-color);
+  transition: 0.5s;
 }
 footer{
   position: relative;
