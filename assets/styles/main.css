@@ -75,6 +75,7 @@ header .container .logo span {
   background-color: var(--main-color);
   padding: 13px 20px;
   color: var(--alt-text-color);
+  cursor: pointer;
   font-weight: 700;
   font-size: 30px;
   border-radius: 50%;
@@ -411,4 +412,59 @@ background-color: var(--main-color);
   border-radius: 20px;
   padding: 10px 40px;
   margin: 50px auto;
+}
+footer{
+  position: relative;
+  background-color: var(--main-color);
+  margin-top: 100px;
+}
+footer::after{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background-image: url(../images/elemnt.webp);
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: 0;
+}
+footer::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background-image: url(../images/elemnt.webp);
+  background-repeat: no-repeat;
+  right: 40px;
+  top: -60px;
+  z-index: -1;
+}
+footer .container{
+  gap: 90px;
+  padding: 20px 0;
+}
+footer .container .logo{
+  font-size: 30px;
+  padding-left: 0;
+}
+footer .container .logo a span{
+  background-color: var(--alt-text-color);
+  color: var(--main-color);
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+footer .container p{
+  color: var(--alt-text-color);
+  padding: 25px ;
+}
+footer h3{
+color: var(--alt-text-color);
+padding: 10px;
+}
+footer a {
+  color: var(--alt-text-color);
+  display: block;
 }
