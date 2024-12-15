@@ -140,6 +140,9 @@ header .container nav .home a {
   align-items: center;
   gap: 30px;
 }
+.hero .container{
+  padding-top: 45px;
+}
 .hero .container .info h1 {
   font-size: var(--h1-size);
 }
@@ -149,13 +152,28 @@ header .container nav .home a {
   background-color: var(--main-color);
   color: var(--alt-text-color);
   border-radius: 40px;
-  padding: 15px 20px;
+  padding: 12px 20px;
   margin-top: 20px;
 }
 .hero .container .info a:hover{
   background-color: var(--alt-text-color);
   color: var(--main-color);
   border: 1.5px solid var(--main-color);
+  transition: 0.5s;
+}
+section .btn{
+  display: block;
+  width: fit-content;
+  color: var(--main-color);
+  font-weight: 600;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 30px auto;
+}
+section .btn:hover{
+  background-color: var(--main-color);
+  color: var(--alt-text-color);
   transition: 0.5s;
 }
 .services .container {
@@ -206,21 +224,6 @@ header .container nav .home a {
 .services .container .our_services .service h3 {
   padding: 15px 0 0 0;
 }
-.services .container  a {
-  display: block;
-  width: fit-content;
-  color: var(--main-color);
-  font-weight: 600;
-  border: 2px solid;
-  border-radius: 20px;
-  padding: 10px 20px;
-  margin: 30px auto;
-}
-.services .container a:hover{
-  background-color: var(--main-color);
-  color: var(--alt-text-color);
-  transition: 0.5s;
-}
 .Leading,
 .what_our_customer_are_saying {
   padding-top: 150px;
@@ -244,35 +247,16 @@ header .container nav .home a {
 .Leading .container p {
   padding-top: 25px;
 }
-.Leading .container a {
-  display: block;
-  width: fit-content;
-  color: var(--main-color);
-  font-weight: 600;
-  border: 2px solid;
-  border-radius: 20px;
-  padding: 10px 20px;
-  margin-top: 25px;
-}
-.Leading .container a:hover{
-  background-color: var(--main-color);
-  color: var(--alt-text-color);
-  transition: 0.5s;
-}
 .download .container {
   gap: 20px;
 }
 .download .container a {
   display: flex;
   align-items: center;
-}
-.download .container a:hover{
-  background-color: var(--main-color);
-  color: var(--alt-text-color);
-  transition: 0.5s;
+  margin:20px 0;
 }
 .download .container a img {
-  height: 20px;
+  height: 15px;
   padding-left: 10px;
 }
 .what_our_customer_are_saying .container {
@@ -424,21 +408,6 @@ background-color: var(--main-color);
   height: 13px;
   padding-left: 10px;
 }
-.check_out_our_latest_article .btn a {
-  display: block;
-  width: fit-content;
-  color: var(--main-color);
-  font-weight: 600;
-  border: 2px solid;
-  border-radius: 20px;
-  padding: 10px 40px;
-  margin: 50px auto;
-}
-.check_out_our_latest_article .btn a:hover{
-  background-color: var(--main-color);
-  color: var(--alt-text-color);
-  transition: 0.5s;
-}
 footer{
   position: relative;
   background-color: var(--main-color);
@@ -484,13 +453,13 @@ footer .container .logo a span{
 }
 footer .container p{
   color: var(--alt-text-color);
-  padding: 25px ;
+  padding: 30px 0;
 }
 footer h3{
 color: var(--alt-text-color);
-padding: 10px;
 }
 footer a {
   color: var(--alt-text-color);
   display: block;
+  padding-left: 0;
 }
