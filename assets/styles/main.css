@@ -247,6 +247,9 @@ section .btn:hover{
 .Leading .container p {
   padding-top: 25px;
 }
+.Leading .container a{
+  margin:25px 0;
+}
 .download .container {
   gap: 20px;
 }
