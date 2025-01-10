@@ -103,9 +103,6 @@ header .container nav .home a {
   font-weight: 600;
 }
 @media (max-width:991px) {
-  header .container nav input {
-    appearance: none;
-  }
   header .container nav ul {
     display: none;
     position: absolute;
@@ -124,14 +121,14 @@ header .container nav .home a {
   header .container nav ul li a {
     color: var(--text-color);
   }
-  header .container nav input:checked+ul {
+  header .container nav ul.hidden {
     display: block;
   }
 }
 @media (min-width:992px) {
-  header .container nav label,
-  input {
+  header .container nav img {
     display: none;
+    cursor: pointer;
   }
   header .container nav ul {
     display: flex;
