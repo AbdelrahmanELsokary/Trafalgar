@@ -126,7 +126,7 @@ header .container nav .home a {
   }
 }
 @media (min-width:992px) {
-  header .container nav img {
+  header .container nav img:not(:last-child) {
     display: none;
     cursor: pointer;
   }
